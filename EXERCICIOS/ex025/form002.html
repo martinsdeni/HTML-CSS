@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div#login {
+            margin: auto;
+            text-align: center;
+            padding-top: 1px;
+            width: 200px;
+            height: 170px;
+            background-color: rgb(231, 124, 124);
+            border-radius: 15px;
+            color: rgba(255, 255, 255, 0.952);
+            font-weight: bold;
+        }
+        
+        input#botao {
+            border-radius: 12px;
+            padding: 5px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.822);
+        }
+
+        input#botao:hover {
+            transition: 1.1s;
+            background-color: rgb(107, 33, 33);
+            color: white;
+        }
+
+        .caixa {
+            text-align: center;
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <div id="login">
+        <form action="login.php" method="post" autocomplete="off">
+            <p>
+                <label for="iusuario">Usuário</label>
+                <input class="caixa" type="text" name="usuario" id="iusuario" required minlength="3" maxlength="15" placeholder="Nome de Usuario">
+            </p>
+            <p>
+                <label for="isenha">Senha</label>
+                <input class="caixa" type="password" name="senha" id="isenha" required minlength="5" placeholder="Palavra Chave">
+            </p>
+            <p>
+                <input id="botao" type="submit" value="Enviar">
+                <input id="botao" type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
