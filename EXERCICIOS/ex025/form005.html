@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        fieldset {
+            background-color: rgba(128, 128, 128, 0.699);
+            border-radius: 15px;
+            width: 250px;
+            margin: 0px;
+            border: none;
+
+        }
+
+        fieldset > legend {
+            color: white;
+            font-weight: bold;
+            font-size: 1.4em;
+            padding-top: 40px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.171);
+        }
+
+        input.botao {
+            margin-left: 35px;
+            border: none;
+            border-radius: 15px;
+            padding: 5px;
+            width: 80px;
+            color: white;
+            background-color: gray;
+        }
+
+        fieldset#caixasexo > label {
+            padding: 5px;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="login.php" method="get" autocomplete="off">
+        <fieldset id="caixasexo">
+            <legend>Sexo</legend> &nbsp <!--sempre colocar o mesmo name-->
+            <input type="radio" name="sexo" id="imasculino" value="m"> <label for="imasculino">Masculino</label>
+            
+            <input type="radio" name="sexo" id="ifeminino" value="f"> <label for="ifeminino">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label> <br>
+            <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label> <br>
+            <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tenis</label> <br>
+            <input type="checkbox" name="natacao" id="inatacao"> <label for="inatacao">Natação</label> <br>
+            <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">Volei</label> <br>
+        </fieldset>
+        <p>
+            <input class="botao" type="submit" value="Enviar">
+            <input class="botao" type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
